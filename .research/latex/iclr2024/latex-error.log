@@ -268,118 +268,115 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [1{/var/lib/texmf/fo
 nts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips
 /base/8r.enc}]
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.65 ...ongsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                   and offers a new perspect...
+
+Package natbib Warning: Citation `salimans2024multistep' on page 2 undefined on
+ input line 64.
 
 
-Package natbib Warning: Citation `salimans\T1\textunderscore2024-06-06T14:20:21
-Z\T1\textunderscoremultistep' on page 2 undefined on input line 65.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.65 ...ongsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                   and offers a new perspect...
+Package natbib Warning: Citation `wizadwongsa2023accelerating' on page 2 undefi
+ned on input line 64.
 
 
-Package natbib Warning: Citation `wizadwongsa\T1\textunderscore2023-01-27T06:48
-:29Z\T1\textunderscoreaccelerating' on page 2 undefined on input line 65.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ...salimans\_2024-06-06T14:20:21Z\_multistep}
-                                                  . Other approaches have le...
+Package natbib Warning: Citation `salimans2024multistep' on page 2 undefined on
+ input line 68.
 
 
-Package natbib Warning: Citation `salimans\T1\textunderscore2024-06-06T14:20:21
-Z\T1\textunderscoremultistep' on page 2 undefined on input line 69.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ...ongsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                  . Additional strategies su...
+Package natbib Warning: Citation `wizadwongsa2023accelerating' on page 2 undefi
+ned on input line 68.
 
 
-Package natbib Warning: Citation `wizadwongsa\T1\textunderscore2023-01-27T06:48
-:29Z\T1\textunderscoreaccelerating' on page 2 undefined on input line 69.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ... \cite{moon\_2024-08-12T05:33:45Z\_simple}
-                                                   and wavelet-based diffusi...
+Package natbib Warning: Citation `moon2024simple' on page 2 undefined on input 
+line 68.
 
 
-Package natbib Warning: Citation `moon\T1\textunderscore2024-08-12T05:33:45Z\T1
-\textunderscoresimple' on page 2 undefined on input line 69.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ...cite{phung\_2022-11-29T12:25:25Z\_wavelet}
-                                                   focus on reducing inferen...
-
-
-Package natbib Warning: Citation `phung\T1\textunderscore2022-11-29T12:25:25Z\T
-1\textunderscorewavelet' on page 2 undefined on input line 69.
+Package natbib Warning: Citation `phung2022wavelet' on page 2 undefined on inpu
+t line 68.
 
 [2]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.87 ...luate local error metrics using a compute_
+                                                  error function.
 
-LaTeX Warning: Reference `fig:adaptive' on page 3 undefined on input line 110.
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State
+              Obtain \(dt\_adjustment\) from the meta-controller based on th...
 
 
-LaTeX Warning: Reference `fig:baseline' on page 3 undefined on input line 110.
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State
+              Obtain \(dt\_adjustment\) from the meta-controller based on th...
 
 
-LaTeX Warning: Reference `fig:comparison' on page 3 undefined on input line 110
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State
+              Obtain \(dt\_adjustment\) from the meta-controller based on th...
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State Obtain \(
+                       dt\_adjustment\) from the meta-controller based on th...
+
+
+LaTeX Warning: Reference `fig:adaptive' on page 3 undefined on input line 109.
+
+
+LaTeX Warning: Reference `fig:baseline' on page 3 undefined on input line 109.
+
+
+LaTeX Warning: Reference `fig:comparison' on page 3 undefined on input line 109
 .
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active [3]
 
-LaTeX Warning: Reference `fig:ablation' on page 4 undefined on input line 133.
+LaTeX Warning: Reference `fig:ablation' on page 4 undefined on input line 132.
 
 [4 <./images/experiment1_adaptive_timesteps.pdf> <./images/experiment1_baseline
 _timesteps.pdf> <./images/experiment1_comparison.pdf>]
 
-LaTeX Warning: Reference `fig:dynamic' on page 5 undefined on input line 142.
+LaTeX Warning: Reference `fig:dynamic' on page 5 undefined on input line 141.
 
 
 LaTeX Warning: Reference `fig:sensitivity' on page 5 undefined on input line 14
-2.
+1.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active [5 <./imag
 es/experiment2_ablation_study.pdf> <./images/experiment3_dynamic_behavior.pdf>]
 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.162 ...ngsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                  , our approach offers a ro...
+
+Package natbib Warning: Citation `salimans2024multistep' on page 6 undefined on
+ input line 161.
 
 
-Package natbib Warning: Citation `salimans\T1\textunderscore2024-06-06T14:20:21
-Z\T1\textunderscoremultistep' on page 6 undefined on input line 162.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.162 ...ngsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                  , our approach offers a ro...
-
-
-Package natbib Warning: Citation `wizadwongsa\T1\textunderscore2023-01-27T06:48
-:29Z\T1\textunderscoreaccelerating' on page 6 undefined on input line 162.
+Package natbib Warning: Citation `wizadwongsa2023accelerating' on page 6 undefi
+ned on input line 161.
 
 
 Package natbib Warning: Citation `airas2025' on page 6 undefined on input line 
-164.
+163.
 
 No file paper.bbl.
 
@@ -404,37 +401,17 @@ nts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (6 pages, 199705 bytes).
+Output written on paper.pdf (6 pages, 200979 bytes).
 Transcript written on paper.log.
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 The top-level auxiliary file: paper.aux
-White space in argument---line 8 of file paper.aux
- : \citation{salimans\protect
- :                            \T1\textunderscore 2024-06-06T14:20:21Z\protect \T1\textunderscore multistep,wizadwongsa\protect \T1\textunderscore 2023-01-27T06:48:29Z\protect \T1\textunderscore accelerating}
-I'm skipping whatever remains of this command
-White space in argument---line 9 of file paper.aux
- : \citation{salimans\protect
- :                            \T1\textunderscore 2024-06-06T14:20:21Z\protect \T1\textunderscore multistep}
-I'm skipping whatever remains of this command
-White space in argument---line 10 of file paper.aux
- : \citation{wizadwongsa\protect
- :                               \T1\textunderscore 2023-01-27T06:48:29Z\protect \T1\textunderscore accelerating}
-I'm skipping whatever remains of this command
-White space in argument---line 11 of file paper.aux
- : \citation{moon\protect
- :                        \T1\textunderscore 2024-08-12T05:33:45Z\protect \T1\textunderscore simple}
-I'm skipping whatever remains of this command
-White space in argument---line 12 of file paper.aux
- : \citation{phung\protect
- :                         \T1\textunderscore 2022-11-29T12:25:25Z\protect \T1\textunderscore wavelet}
-I'm skipping whatever remains of this command
-White space in argument---line 44 of file paper.aux
- : \citation{salimans\protect
- :                            \T1\textunderscore 2024-06-06T14:20:21Z\protect \T1\textunderscore multistep,wizadwongsa\protect \T1\textunderscore 2023-01-27T06:48:29Z\protect \T1\textunderscore accelerating}
-I'm skipping whatever remains of this command
 The style file: iclr2024_conference.bst
 Database file #1: references.bib
-(There were 6 error messages)
+Warning--I didn't find a database entry for "salimans2024multistep"
+Warning--I didn't find a database entry for "wizadwongsa2023accelerating"
+Warning--I didn't find a database entry for "moon2024simple"
+Warning--I didn't find a database entry for "phung2022wavelet"
+(There were 4 warnings)
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
 entering extended mode
@@ -706,96 +683,94 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [1{/var/lib/texmf/fo
 nts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips
 /base/8r.enc}]
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.65 ...ongsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                   and offers a new perspect...
+
+Package natbib Warning: Citation `salimans2024multistep' on page 2 undefined on
+ input line 64.
 
 
-Package natbib Warning: Citation `salimans\T1\textunderscore2024-06-06T14:20:21
-Z\T1\textunderscoremultistep' on page 2 undefined on input line 65.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.65 ...ongsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                   and offers a new perspect...
+Package natbib Warning: Citation `wizadwongsa2023accelerating' on page 2 undefi
+ned on input line 64.
 
 
-Package natbib Warning: Citation `wizadwongsa\T1\textunderscore2023-01-27T06:48
-:29Z\T1\textunderscoreaccelerating' on page 2 undefined on input line 65.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ...salimans\_2024-06-06T14:20:21Z\_multistep}
-                                                  . Other approaches have le...
+Package natbib Warning: Citation `salimans2024multistep' on page 2 undefined on
+ input line 68.
 
 
-Package natbib Warning: Citation `salimans\T1\textunderscore2024-06-06T14:20:21
-Z\T1\textunderscoremultistep' on page 2 undefined on input line 69.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ...ongsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                  . Additional strategies su...
+Package natbib Warning: Citation `wizadwongsa2023accelerating' on page 2 undefi
+ned on input line 68.
 
 
-Package natbib Warning: Citation `wizadwongsa\T1\textunderscore2023-01-27T06:48
-:29Z\T1\textunderscoreaccelerating' on page 2 undefined on input line 69.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ... \cite{moon\_2024-08-12T05:33:45Z\_simple}
-                                                   and wavelet-based diffusi...
+Package natbib Warning: Citation `moon2024simple' on page 2 undefined on input 
+line 68.
 
 
-Package natbib Warning: Citation `moon\T1\textunderscore2024-08-12T05:33:45Z\T1
-\textunderscoresimple' on page 2 undefined on input line 69.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ...cite{phung\_2022-11-29T12:25:25Z\_wavelet}
-                                                   focus on reducing inferen...
-
-
-Package natbib Warning: Citation `phung\T1\textunderscore2022-11-29T12:25:25Z\T
-1\textunderscorewavelet' on page 2 undefined on input line 69.
+Package natbib Warning: Citation `phung2022wavelet' on page 2 undefined on inpu
+t line 68.
 
 [2]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.87 ...luate local error metrics using a compute_
+                                                  error function.
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State
+              Obtain \(dt\_adjustment\) from the meta-controller based on th...
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State
+              Obtain \(dt\_adjustment\) from the meta-controller based on th...
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State
+              Obtain \(dt\_adjustment\) from the meta-controller based on th...
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State Obtain \(
+                       dt\_adjustment\) from the meta-controller based on th...
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active [3]
 [4 <./images/experiment1_adaptive_timesteps.pdf> <./images/experiment1_baseline
 _timesteps.pdf> <./images/experiment1_comparison.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active [5 <./imag
 es/experiment2_ablation_study.pdf> <./images/experiment3_dynamic_behavior.pdf>]
 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.162 ...ngsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                  , our approach offers a ro...
+
+Package natbib Warning: Citation `salimans2024multistep' on page 6 undefined on
+ input line 161.
 
 
-Package natbib Warning: Citation `salimans\T1\textunderscore2024-06-06T14:20:21
-Z\T1\textunderscoremultistep' on page 6 undefined on input line 162.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.162 ...ngsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                  , our approach offers a ro...
-
-
-Package natbib Warning: Citation `wizadwongsa\T1\textunderscore2023-01-27T06:48
-:29Z\T1\textunderscoreaccelerating' on page 6 undefined on input line 162.
+Package natbib Warning: Citation `wizadwongsa2023accelerating' on page 6 undefi
+ned on input line 161.
 
 
 Package natbib Warning: Citation `airas2025' on page 6 undefined on input line 
-164.
+163.
 
 (./paper.bbl (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd))
 
@@ -814,7 +789,7 @@ e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
 r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (6 pages, 210981 bytes).
+Output written on paper.pdf (6 pages, 212250 bytes).
 Transcript written on paper.log.
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
@@ -1087,92 +1062,90 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd) [1{/var/lib/texmf/fo
 nts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips
 /base/8r.enc}]
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.65 ...ongsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                   and offers a new perspect...
+
+Package natbib Warning: Citation `salimans2024multistep' on page 2 undefined on
+ input line 64.
 
 
-Package natbib Warning: Citation `salimans\T1\textunderscore2024-06-06T14:20:21
-Z\T1\textunderscoremultistep' on page 2 undefined on input line 65.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.65 ...ongsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                   and offers a new perspect...
+Package natbib Warning: Citation `wizadwongsa2023accelerating' on page 2 undefi
+ned on input line 64.
 
 
-Package natbib Warning: Citation `wizadwongsa\T1\textunderscore2023-01-27T06:48
-:29Z\T1\textunderscoreaccelerating' on page 2 undefined on input line 65.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ...salimans\_2024-06-06T14:20:21Z\_multistep}
-                                                  . Other approaches have le...
+Package natbib Warning: Citation `salimans2024multistep' on page 2 undefined on
+ input line 68.
 
 
-Package natbib Warning: Citation `salimans\T1\textunderscore2024-06-06T14:20:21
-Z\T1\textunderscoremultistep' on page 2 undefined on input line 69.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ...ongsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                  . Additional strategies su...
+Package natbib Warning: Citation `wizadwongsa2023accelerating' on page 2 undefi
+ned on input line 68.
 
 
-Package natbib Warning: Citation `wizadwongsa\T1\textunderscore2023-01-27T06:48
-:29Z\T1\textunderscoreaccelerating' on page 2 undefined on input line 69.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ... \cite{moon\_2024-08-12T05:33:45Z\_simple}
-                                                   and wavelet-based diffusi...
+Package natbib Warning: Citation `moon2024simple' on page 2 undefined on input 
+line 68.
 
 
-Package natbib Warning: Citation `moon\T1\textunderscore2024-08-12T05:33:45Z\T1
-\textunderscoresimple' on page 2 undefined on input line 69.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.69 ...cite{phung\_2022-11-29T12:25:25Z\_wavelet}
-                                                   focus on reducing inferen...
-
-
-Package natbib Warning: Citation `phung\T1\textunderscore2022-11-29T12:25:25Z\T
-1\textunderscorewavelet' on page 2 undefined on input line 69.
+Package natbib Warning: Citation `phung2022wavelet' on page 2 undefined on inpu
+t line 68.
 
 [2]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.87 ...luate local error metrics using a compute_
+                                                  error function.
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State
+              Obtain \(dt\_adjustment\) from the meta-controller based on th...
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State
+              Obtain \(dt\_adjustment\) from the meta-controller based on th...
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State
+              Obtain \(dt\_adjustment\) from the meta-controller based on th...
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88   \State Obtain \(
+                       dt\_adjustment\) from the meta-controller based on th...
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active [3]
 [4 <./images/experiment1_adaptive_timesteps.pdf> <./images/experiment1_baseline
 _timesteps.pdf> <./images/experiment1_comparison.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active [5 <./imag
 es/experiment2_ablation_study.pdf> <./images/experiment3_dynamic_behavior.pdf>]
 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.162 ...ngsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                  , our approach offers a ro...
+
+Package natbib Warning: Citation `salimans2024multistep' on page 6 undefined on
+ input line 161.
 
 
-Package natbib Warning: Citation `salimans\T1\textunderscore2024-06-06T14:20:21
-Z\T1\textunderscoremultistep' on page 6 undefined on input line 162.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \protect 
-l.162 ...ngsa\_2023-01-27T06:48:29Z\_accelerating}
-                                                  , our approach offers a ro...
-
-
-Package natbib Warning: Citation `wizadwongsa\T1\textunderscore2023-01-27T06:48
-:29Z\T1\textunderscoreaccelerating' on page 6 undefined on input line 162.
+Package natbib Warning: Citation `wizadwongsa2023accelerating' on page 6 undefi
+ned on input line 161.
 
 (./paper.bbl (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd))
 
@@ -1186,5 +1159,5 @@ e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
 r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (6 pages, 211066 bytes).
+Output written on paper.pdf (6 pages, 212319 bytes).
 Transcript written on paper.log.
