@@ -5,3 +5,432 @@
   publisher = {GitHub},
   url       = {https://github.com/airas-org/airas}
 }
+
+% ===========================================
+% REQUIRED CITATIONS
+% These papers must be cited in the manuscript
+% ===========================================
+
+@article{author_year_any,
+ title = {Any-scale Balanced Samplers for Discrete Space}
+}
+
+@article{daghaghi_2020-12-31T18:56:41Z_tale,
+ abstract = {Softmax classifiers with a very large number of classes naturally occur in
+many applications such as natural language processing and information
+retrieval. The calculation of full softmax is costly from the computational and
+energy perspective. There have been various sampling approaches to overcome
+this challenge, popularly known as negative sampling (NS). Ideally, NS should
+sample negative classes from a distribution that is dependent on the input
+data, the current parameters, and the correct positive class. Unfortunately,
+due to the dynamically updated parameters and data samples, there is no
+sampling scheme that is provably adaptive and samples the negative classes
+efficiently. Therefore, alternative heuristics like random sampling, static
+frequency-based sampling, or learning-based biased sampling, which primarily
+trade either the sampling cost or the adaptivity of samples per iteration are
+adopted. In this paper, we show two classes of distributions where the sampling
+scheme is truly adaptive and provably generates negative samples in
+near-constant time. Our implementation in C++ on CPU is significantly superior,
+both in terms of wall-clock time and accuracy, compared to the most optimized
+TensorFlow implementations of other popular negative sampling approaches on
+powerful NVIDIA V100 GPU.},
+ arxiv_url = {https://arxiv.org/pdf/2012.15843v2.pdf},
+ author = {Shabnam Daghaghi and Tharun Medini and Nicholas Meisburger and Beidi Chen and Mengnan Zhao and Anshumali Shrivastava},
+ title = {A Tale of Two Efficient and Informative Negative Sampling Distributions},
+ year = {2020-12-31T18:56:41Z}
+}
+
+@article{daghaghi_2020-12-31T18:56:41Z_tale,
+ abstract = {Softmax classifiers with a very large number of classes naturally occur in
+many applications such as natural language processing and information
+retrieval. The calculation of full softmax is costly from the computational and
+energy perspective. There have been various sampling approaches to overcome
+this challenge, popularly known as negative sampling (NS). Ideally, NS should
+sample negative classes from a distribution that is dependent on the input
+data, the current parameters, and the correct positive class. Unfortunately,
+due to the dynamically updated parameters and data samples, there is no
+sampling scheme that is provably adaptive and samples the negative classes
+efficiently. Therefore, alternative heuristics like random sampling, static
+frequency-based sampling, or learning-based biased sampling, which primarily
+trade either the sampling cost or the adaptivity of samples per iteration are
+adopted. In this paper, we show two classes of distributions where the sampling
+scheme is truly adaptive and provably generates negative samples in
+near-constant time. Our implementation in C++ on CPU is significantly superior,
+both in terms of wall-clock time and accuracy, compared to the most optimized
+TensorFlow implementations of other popular negative sampling approaches on
+powerful NVIDIA V100 GPU.},
+ arxiv_url = {https://arxiv.org/pdf/2012.15843v2.pdf},
+ author = {Shabnam Daghaghi and Tharun Medini and Nicholas Meisburger and Beidi Chen and Mengnan Zhao and Anshumali Shrivastava},
+ title = {A Tale of Two Efficient and Informative Negative Sampling Distributions},
+ year = {2020-12-31T18:56:41Z}
+}
+
+@article{das_2023-06-01T09:53:35Z_image,
+ abstract = {The field of image generation has made significant progress thanks to the
+introduction of Diffusion Models, which learn to progressively reverse a given
+image corruption. Recently, a few studies introduced alternative ways of
+corrupting images in Diffusion Models, with an emphasis on blurring. However,
+these studies are purely empirical and it remains unclear what is the optimal
+procedure for corrupting an image. In this work, we hypothesize that the
+optimal procedure minimizes the length of the path taken when corrupting an
+image towards a given final state. We propose the Fisher metric for the path
+length, measured in the space of probability distributions. We compute the
+shortest path according to this metric, and we show that it corresponds to a
+combination of image sharpening, rather than blurring, and noise deblurring.
+While the corruption was chosen arbitrarily in previous work, our Shortest Path
+Diffusion (SPD) determines uniquely the entire spatiotemporal structure of the
+corruption. We show that SPD improves on strong baselines without any
+hyperparameter tuning, and outperforms all previous Diffusion Models based on
+image blurring. Furthermore, any small deviation from the shortest path leads
+to worse performance, suggesting that SPD provides the optimal procedure to
+corrupt images. Our work sheds new light on observations made in recent works
+and provides a new approach to improve diffusion models on images and other
+types of data.},
+ arxiv_url = {https://arxiv.org/pdf/2306.00501v1.pdf},
+ author = {Ayan Das and Stathi Fotiadis and Anil Batra and Farhang Nabiei and FengTing Liao and Sattar Vakili and Da-shan Shiu and Alberto Bernacchia},
+ title = {Image generation with shortest path diffusion},
+ year = {2023-06-01T09:53:35Z}
+}
+
+@article{karras_2023-12-05T11:55:47Z_analyzing,
+ abstract = {Diffusion models currently dominate the field of data-driven image synthesis
+with their unparalleled scaling to large datasets. In this paper, we identify
+and rectify several causes for uneven and ineffective training in the popular
+ADM diffusion model architecture, without altering its high-level structure.
+Observing uncontrolled magnitude changes and imbalances in both the network
+activations and weights over the course of training, we redesign the network
+layers to preserve activation, weight, and update magnitudes on expectation. We
+find that systematic application of this philosophy eliminates the observed
+drifts and imbalances, resulting in considerably better networks at equal
+computational complexity. Our modifications improve the previous record FID of
+2.41 in ImageNet-512 synthesis to 1.81, achieved using fast deterministic
+sampling.
+  As an independent contribution, we present a method for setting the
+exponential moving average (EMA) parameters post-hoc, i.e., after completing
+the training run. This allows precise tuning of EMA length without the cost of
+performing several training runs, and reveals its surprising interactions with
+network architecture, training time, and guidance.},
+ arxiv_url = {https://arxiv.org/pdf/2312.02696v2.pdf},
+ author = {Tero Karras and Miika Aittala and Jaakko Lehtinen and Janne Hellsten and Timo Aila and Samuli Laine},
+ github_url = {https://github.com/NVlabs/edm2},
+ title = {Analyzing and Improving the Training Dynamics of Diffusion Models},
+ year = {2023-12-05T11:55:47Z}
+}
+
+@article{karras_2023-12-05T11:55:47Z_analyzing,
+ abstract = {Diffusion models currently dominate the field of data-driven image synthesis
+with their unparalleled scaling to large datasets. In this paper, we identify
+and rectify several causes for uneven and ineffective training in the popular
+ADM diffusion model architecture, without altering its high-level structure.
+Observing uncontrolled magnitude changes and imbalances in both the network
+activations and weights over the course of training, we redesign the network
+layers to preserve activation, weight, and update magnitudes on expectation. We
+find that systematic application of this philosophy eliminates the observed
+drifts and imbalances, resulting in considerably better networks at equal
+computational complexity. Our modifications improve the previous record FID of
+2.41 in ImageNet-512 synthesis to 1.81, achieved using fast deterministic
+sampling.
+  As an independent contribution, we present a method for setting the
+exponential moving average (EMA) parameters post-hoc, i.e., after completing
+the training run. This allows precise tuning of EMA length without the cost of
+performing several training runs, and reveals its surprising interactions with
+network architecture, training time, and guidance.},
+ arxiv_url = {https://arxiv.org/pdf/2312.02696v2.pdf},
+ author = {Tero Karras and Miika Aittala and Jaakko Lehtinen and Janne Hellsten and Timo Aila and Samuli Laine},
+ github_url = {https://github.com/NVlabs/edm},
+ title = {Analyzing and Improving the Training Dynamics of Diffusion Models},
+ year = {2023-12-05T11:55:47Z}
+}
+
+@article{li_2023-12-15T08:46:43Z_faster,
+ abstract = {One of the main drawback of diffusion models is the slow inference time for
+image generation. Among the most successful approaches to addressing this
+problem are distillation methods. However, these methods require considerable
+computational resources. In this paper, we take another approach to diffusion
+model acceleration. We conduct a comprehensive study of the UNet encoder and
+empirically analyze the encoder features. This provides insights regarding
+their changes during the inference process. In particular, we find that encoder
+features change minimally, whereas the decoder features exhibit substantial
+variations across different time-steps. This insight motivates us to omit
+encoder computation at certain adjacent time-steps and reuse encoder features
+of previous time-steps as input to the decoder in multiple time-steps.
+Importantly, this allows us to perform decoder computation in parallel, further
+accelerating the denoising process. Additionally, we introduce a prior noise
+injection method to improve the texture details in the generated image. Besides
+the standard text-to-image task, we also validate our approach on other tasks:
+text-to-video, personalized generation and reference-guided generation. Without
+utilizing any knowledge distillation technique, our approach accelerates both
+the Stable Diffusion (SD) and DeepFloyd-IF model sampling by 41$\%$ and 24$\%$
+respectively, and DiT model sampling by 34$\%$, while maintaining high-quality
+generation performance.},
+ arxiv_url = {https://arxiv.org/pdf/2312.09608v2.pdf},
+ author = {Senmao Li and Taihang Hu and Joost van de Weijer and Fahad Shahbaz Khan and Tao Liu and Linxuan Li and Shiqi Yang and Yaxing Wang and Ming-Ming Cheng and Jian Yang},
+ github_url = {https://github.com/adobe-research/custom-diffusion},
+ title = {Faster Diffusion: Rethinking the Role of the Encoder for Diffusion Model Inference},
+ year = {2023-12-15T08:46:43Z}
+}
+
+@article{moon_2024-08-12T05:33:45Z_simple,
+ abstract = {Diffusion models have shown remarkable performance in generation problems
+over various domains including images, videos, text, and audio. A practical
+bottleneck of diffusion models is their sampling speed, due to the repeated
+evaluation of score estimation networks during the inference. In this work, we
+propose a novel framework capable of adaptively allocating compute required for
+the score estimation, thereby reducing the overall sampling time of diffusion
+models. We observe that the amount of computation required for the score
+estimation may vary along the time step for which the score is estimated. Based
+on this observation, we propose an early-exiting scheme, where we skip the
+subset of parameters in the score estimation network during the inference,
+based on a time-dependent exit schedule. Using the diffusion models for image
+synthesis, we show that our method could significantly improve the sampling
+throughput of the diffusion models without compromising image quality.
+Furthermore, we also demonstrate that our method seamlessly integrates with
+various types of solvers for faster sampling, capitalizing on their
+compatibility to enhance overall efficiency. The source code and our
+experiments are available at \url{https://github.com/taehong-moon/ee-diffusion}},
+ arxiv_url = {https://arxiv.org/pdf/2408.05927v1.pdf},
+ author = {Taehong Moon and Moonseok Choi and EungGu Yun and Jongmin Yoon and Gayoung Lee and Jaewoong Cho and Juho Lee},
+ title = {A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models},
+ year = {2024-08-12T05:33:45Z}
+}
+
+@article{phung_2022-11-29T12:25:25Z_wavelet,
+ abstract = {Diffusion models are rising as a powerful solution for high-fidelity image
+generation, which exceeds GANs in quality in many circumstances. However, their
+slow training and inference speed is a huge bottleneck, blocking them from
+being used in real-time applications. A recent DiffusionGAN method
+significantly decreases the models' running time by reducing the number of
+sampling steps from thousands to several, but their speeds still largely lag
+behind the GAN counterparts. This paper aims to reduce the speed gap by
+proposing a novel wavelet-based diffusion scheme. We extract low-and-high
+frequency components from both image and feature levels via wavelet
+decomposition and adaptively handle these components for faster processing
+while maintaining good generation quality. Furthermore, we propose to use a
+reconstruction term, which effectively boosts the model training convergence.
+Experimental results on CelebA-HQ, CIFAR-10, LSUN-Church, and STL-10 datasets
+prove our solution is a stepping-stone to offering real-time and high-fidelity
+diffusion models. Our code and pre-trained checkpoints are available at
+\url{https://github.com/VinAIResearch/WaveDiff.git}.},
+ arxiv_url = {https://arxiv.org/pdf/2211.16152v2.pdf},
+ author = {Hao Phung and Quan Dao and Anh Tran},
+ title = {Wavelet Diffusion Models Are Fast and Scalable Image Generators},
+ year = {2022-11-29T12:25:25Z}
+}
+
+@article{phung_2022-11-29T12:25:25Z_wavelet,
+ abstract = {Diffusion models are rising as a powerful solution for high-fidelity image
+generation, which exceeds GANs in quality in many circumstances. However, their
+slow training and inference speed is a huge bottleneck, blocking them from
+being used in real-time applications. A recent DiffusionGAN method
+significantly decreases the models' running time by reducing the number of
+sampling steps from thousands to several, but their speeds still largely lag
+behind the GAN counterparts. This paper aims to reduce the speed gap by
+proposing a novel wavelet-based diffusion scheme. We extract low-and-high
+frequency components from both image and feature levels via wavelet
+decomposition and adaptively handle these components for faster processing
+while maintaining good generation quality. Furthermore, we propose to use a
+reconstruction term, which effectively boosts the model training convergence.
+Experimental results on CelebA-HQ, CIFAR-10, LSUN-Church, and STL-10 datasets
+prove our solution is a stepping-stone to offering real-time and high-fidelity
+diffusion models. Our code and pre-trained checkpoints are available at
+\url{https://github.com/VinAIResearch/WaveDiff.git}.},
+ arxiv_url = {https://arxiv.org/pdf/2211.16152v2.pdf},
+ author = {Hao Phung and Quan Dao and Anh Tran},
+ title = {Wavelet Diffusion Models Are Fast and Scalable Image Generators},
+ year = {2022-11-29T12:25:25Z}
+}
+
+@article{salimans_2024-06-06T14:20:21Z_multistep,
+ abstract = {We present a new method for making diffusion models faster to sample. The
+method distills many-step diffusion models into few-step models by matching
+conditional expectations of the clean data given noisy data along the sampling
+trajectory. Our approach extends recently proposed one-step methods to the
+multi-step case, and provides a new perspective by interpreting these
+approaches in terms of moment matching. By using up to 8 sampling steps, we
+obtain distilled models that outperform not only their one-step versions but
+also their original many-step teacher models, obtaining new state-of-the-art
+results on the Imagenet dataset. We also show promising results on a large
+text-to-image model where we achieve fast generation of high resolution images
+directly in image space, without needing autoencoders or upsamplers.},
+ arxiv_url = {https://arxiv.org/pdf/2406.04103v1.pdf},
+ author = {Tim Salimans and Thomas Mensink and Jonathan Heek and Emiel Hoogeboom},
+ github_url = {https://github.com/google/jax},
+ title = {Multistep Distillation of Diffusion Models via Moment Matching},
+ year = {2024-06-06T14:20:21Z}
+}
+
+@article{salimans_2024-06-06T14:20:21Z_multistep,
+ abstract = {We present a new method for making diffusion models faster to sample. The
+method distills many-step diffusion models into few-step models by matching
+conditional expectations of the clean data given noisy data along the sampling
+trajectory. Our approach extends recently proposed one-step methods to the
+multi-step case, and provides a new perspective by interpreting these
+approaches in terms of moment matching. By using up to 8 sampling steps, we
+obtain distilled models that outperform not only their one-step versions but
+also their original many-step teacher models, obtaining new state-of-the-art
+results on the Imagenet dataset. We also show promising results on a large
+text-to-image model where we achieve fast generation of high resolution images
+directly in image space, without needing autoencoders or upsamplers.},
+ arxiv_url = {https://arxiv.org/pdf/2406.04103v1.pdf},
+ author = {Tim Salimans and Thomas Mensink and Jonathan Heek and Emiel Hoogeboom},
+ github_url = {https://github.com/google/jax},
+ title = {Multistep Distillation of Diffusion Models via Moment Matching},
+ year = {2024-06-06T14:20:21Z}
+}
+
+@article{wizadwongsa_2023-01-27T06:48:29Z_accelerating,
+ abstract = {Guided diffusion is a technique for conditioning the output of a diffusion
+model at sampling time without retraining the network for each specific task.
+One drawback of diffusion models, however, is their slow sampling process.
+Recent techniques can accelerate unguided sampling by applying high-order
+numerical methods to the sampling process when viewed as differential
+equations. On the contrary, we discover that the same techniques do not work
+for guided sampling, and little has been explored about its acceleration. This
+paper explores the culprit of this problem and provides a solution based on
+operator splitting methods, motivated by our key finding that classical
+high-order numerical methods are unsuitable for the conditional function. Our
+proposed method can re-utilize the high-order methods for guided sampling and
+can generate images with the same quality as a 250-step DDIM baseline using
+32-58% less sampling time on ImageNet256. We also demonstrate usage on a wide
+variety of conditional generation tasks, such as text-to-image generation,
+colorization, inpainting, and super-resolution.},
+ arxiv_url = {https://arxiv.org/pdf/2301.11558v1.pdf},
+ author = {Suttisak Wizadwongsa and Supasorn Suwajanakorn},
+ github_url = {https://github.com/sWizad/split-diffusion},
+ title = {Accelerating Guided Diffusion Sampling with Splitting Numerical Methods},
+ year = {2023-01-27T06:48:29Z}
+}
+
+@article{wizadwongsa_2023-01-27T06:48:29Z_accelerating,
+ abstract = {Guided diffusion is a technique for conditioning the output of a diffusion
+model at sampling time without retraining the network for each specific task.
+One drawback of diffusion models, however, is their slow sampling process.
+Recent techniques can accelerate unguided sampling by applying high-order
+numerical methods to the sampling process when viewed as differential
+equations. On the contrary, we discover that the same techniques do not work
+for guided sampling, and little has been explored about its acceleration. This
+paper explores the culprit of this problem and provides a solution based on
+operator splitting methods, motivated by our key finding that classical
+high-order numerical methods are unsuitable for the conditional function. Our
+proposed method can re-utilize the high-order methods for guided sampling and
+can generate images with the same quality as a 250-step DDIM baseline using
+32-58% less sampling time on ImageNet256. We also demonstrate usage on a wide
+variety of conditional generation tasks, such as text-to-image generation,
+colorization, inpainting, and super-resolution.},
+ arxiv_url = {https://arxiv.org/pdf/2301.11558v1.pdf},
+ author = {Suttisak Wizadwongsa and Supasorn Suwajanakorn},
+ github_url = {https://github.com/sWizad/split-diffusion},
+ title = {Accelerating Guided Diffusion Sampling with Splitting Numerical Methods},
+ year = {2023-01-27T06:48:29Z}
+}
+
+@article{xia_2023-10-14T02:19:07Z_towards,
+ abstract = {A diffusion model, which is formulated to produce an image using thousands of
+denoising steps, usually suffers from a slow inference speed. Existing
+acceleration algorithms simplify the sampling by skipping most steps yet
+exhibit considerable performance degradation. By viewing the generation of
+diffusion models as a discretized integrating process, we argue that the
+quality drop is partly caused by applying an inaccurate integral direction to a
+timestep interval. To rectify this issue, we propose a timestep aligner that
+helps find a more accurate integral direction for a particular interval at the
+minimum cost. Specifically, at each denoising step, we replace the original
+parameterization by conditioning the network on a new timestep, which is
+obtained by aligning the sampling distribution to the real distribution.
+Extensive experiments show that our plug-in design can be trained efficiently
+and boost the inference performance of various state-of-the-art acceleration
+methods, especially when there are few denoising steps. For example, when using
+10 denoising steps on the popular LSUN Bedroom dataset, we improve the FID of
+DDIM from 9.65 to 6.07, simply by adopting our method for a more appropriate
+set of timesteps. Code will be made publicly available.},
+ arxiv_url = {https://arxiv.org/pdf/2310.09469v1.pdf},
+ author = {Mengfei Xia and Yujun Shen and Changsong Lei and Yu Zhou and Ran Yi and Deli Zhao and Wenping Wang and Yong-jin Liu},
+ title = {Towards More Accurate Diffusion Model Acceleration with A Timestep Tuner},
+ year = {2023-10-14T02:19:07Z}
+}
+
+% ===========================================
+% REFERENCE CANDIDATES
+% Additional reference papers for context
+% ===========================================
+
+@article{author_year_clip,
+ title = {CLIP guided diffusion 512x512, secondary model method}
+}
+
+@article{chung_2021-12-09T04:28:41Z_come,
+ abstract = {Diffusion models have recently attained significant interest within the
+community owing to their strong performance as generative models. Furthermore,
+its application to inverse problems have demonstrated state-of-the-art
+performance. Unfortunately, diffusion models have a critical downside - they
+are inherently slow to sample from, needing few thousand steps of iteration to
+generate images from pure Gaussian noise. In this work, we show that starting
+from Gaussian noise is unnecessary. Instead, starting from a single forward
+diffusion with better initialization significantly reduces the number of
+sampling steps in the reverse conditional diffusion. This phenomenon is
+formally explained by the contraction theory of the stochastic difference
+equations like our conditional diffusion strategy - the alternating
+applications of reverse diffusion followed by a non-expansive data consistency
+step. The new sampling strategy, dubbed Come-Closer-Diffuse-Faster (CCDF), also
+reveals a new insight on how the existing feed-forward neural network
+approaches for inverse problems can be synergistically combined with the
+diffusion models. Experimental results with super-resolution, image inpainting,
+and compressed sensing MRI demonstrate that our method can achieve
+state-of-the-art reconstruction performance at significantly reduced sampling
+steps.},
+ arxiv_url = {https://arxiv.org/pdf/2112.05146v2.pdf},
+ author = {Hyungjin Chung and Byeongsu Sim and Jong Chul Ye},
+ title = {Come-Closer-Diffuse-Faster: Accelerating conditional diffusion models for inverse problems through stochastic contraction},
+ year = {2021-12-09T04:28:41Z}
+}
+
+@article{chung_2022-06-02T09:06:10Z_improving,
+ abstract = {Recently, diffusion models have been used to solve various inverse problems
+in an unsupervised manner with appropriate modifications to the sampling
+process. However, the current solvers, which recursively apply a reverse
+diffusion step followed by a projection-based measurement consistency step,
+often produce suboptimal results. By studying the generative sampling path,
+here we show that current solvers throw the sample path off the data manifold,
+and hence the error accumulates. To address this, we propose an additional
+correction term inspired by the manifold constraint, which can be used
+synergistically with the previous solvers to make the iterations close to the
+manifold. The proposed manifold constraint is straightforward to implement
+within a few lines of code, yet boosts the performance by a surprisingly large
+margin. With extensive experiments, we show that our method is superior to the
+previous methods both theoretically and empirically, producing promising
+results in many applications such as image inpainting, colorization, and
+sparse-view computed tomography. Code available
+https://github.com/HJ-harry/MCG_diffusion},
+ arxiv_url = {https://arxiv.org/pdf/2206.00941v3.pdf},
+ author = {Hyungjin Chung and Byeongsu Sim and Dohoon Ryu and Jong Chul Ye},
+ title = {Improving diffusion models for inverse problems using manifold constraints},
+ year = {2022-06-02T09:06:10Z}
+}
+
+@article{dockhorn_2021-12-14T00:01:34Z_score,
+ abstract = {Score-based generative models (SGMs) have demonstrated remarkable synthesis
+quality. SGMs rely on a diffusion process that gradually perturbs the data
+towards a tractable distribution, while the generative model learns to denoise.
+The complexity of this denoising task is, apart from the data distribution
+itself, uniquely determined by the diffusion process. We argue that current
+SGMs employ overly simplistic diffusions, leading to unnecessarily complex
+denoising processes, which limit generative modeling performance. Based on
+connections to statistical mechanics, we propose a novel critically-damped
+Langevin diffusion (CLD) and show that CLD-based SGMs achieve superior
+performance. CLD can be interpreted as running a joint diffusion in an extended
+space, where the auxiliary variables can be considered "velocities" that are
+coupled to the data variables as in Hamiltonian dynamics. We derive a novel
+score matching objective for CLD and show that the model only needs to learn
+the score function of the conditional distribution of the velocity given data,
+an easier task than learning scores of the data directly. We also derive a new
+sampling scheme for efficient synthesis from CLD-based diffusion models. We
+find that CLD outperforms previous SGMs in synthesis quality for similar
+network architectures and sampling compute budgets. We show that our novel
+sampler for CLD significantly outperforms solvers such as Euler--Maruyama. Our
+framework provides new insights into score-based denoising diffusion models and
+can be readily used for high-resolution image synthesis. Project page and code:
+https://nv-tlabs.github.io/CLD-SGM.},
+ arxiv_url = {https://arxiv.org/pdf/2112.07068v4.pdf},
+ author = {Tim Dockhorn and Arash Vahdat and Karsten Kreis},
+ title = {Score-based generative modeling with critically-damped langevin diffusion},
+ year = {2021-12-14T00:01:34Z}
+}
