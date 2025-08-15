@@ -29,7 +29,6 @@
 \usepackage{tabularx}
 \pgfplotsset{compat=newest}
 
-
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
 
@@ -62,11 +61,11 @@ Our experiments compare a fixed‐timestep baseline against the AEFTM‐enhanced
   \item \textbf{Selective Re-alignment:} A mechanism that recalculates the conditional guidance when error metrics exceed threshold limits.
   \item \textbf{Experimental Validation:} Extensive studies, including component-wise ablation and sensitivity analyses, that reveal the internal dynamics of the diffusion process under adaptive modulation.
 \end{itemize}
-Our work builds on prior approaches in diffusion model acceleration \cite{salimans\_2024-06-06T14:20:21Z\_multistep, wizadwongsa\_2023-01-27T06:48:29Z\_accelerating} and offers a new perspective that harmonizes operator splitting techniques with error-adaptive numerical methods. Future research will extend our approach to multi-modal and video generation tasks, further broadening its applicability to interactive and resource-constrained environments.
+Our work builds on prior approaches in diffusion model acceleration \cite{salimans2024multistep, wizadwongsa2023accelerating} and offers a new perspective that harmonizes operator splitting techniques with error-adaptive numerical methods. Future research will extend our approach to multi-modal and video generation tasks, further broadening its applicability to interactive and resource-constrained environments.
 
 \section{Related Work}
 \label{sec:related}
-Several techniques have been advanced for accelerating diffusion model sampling. For instance, multistep distillation methods reformulate the sample trajectory into a reduced number of steps by matching conditional expectations, thereby reducing computational overhead while preserving quality \cite{salimans\_2024-06-06T14:20:21Z\_multistep}. Other approaches have leveraged operator splitting methods for guided diffusion. However, these methods typically rely on fixed numerical schemes that cannot fully accommodate the dynamic nature of conditional signals \cite{wizadwongsa\_2023-01-27T06:48:29Z\_accelerating}. Additional strategies such as early exiting frameworks \cite{moon\_2024-08-12T05:33:45Z\_simple} and wavelet-based diffusion approaches \cite{phung\_2022-11-29T12:25:25Z\_wavelet} focus on reducing inference time by either skipping redundant computations or processing distinct frequency components separately. While these techniques achieve trade-offs between speed and output quality, they lack a mechanism for continuously adapting the timestep to real-time error feedback. In contrast, our AEFTM framework leverages learnable adaptation via a meta-controller to modulate the timestep dynamically, offering a flexible and continuously adaptive alternative that complements and extends existing acceleration methods.
+Several techniques have been advanced for accelerating diffusion model sampling. For instance, multistep distillation methods reformulate the sample trajectory into a reduced number of steps by matching conditional expectations, thereby reducing computational overhead while preserving quality \cite{salimans2024multistep}. Other approaches have leveraged operator splitting methods for guided diffusion. However, these methods typically rely on fixed numerical schemes that cannot fully accommodate the dynamic nature of conditional signals \cite{wizadwongsa2023accelerating}. Additional strategies such as early exiting frameworks \cite{moon2024simple} and wavelet-based diffusion approaches \cite{phung2022wavelet} focus on reducing inference time by either skipping redundant computations or processing distinct frequency components separately. While these techniques achieve trade-offs between speed and output quality, they lack a mechanism for continuously adapting the timestep to real-time error feedback. In contrast, our AEFTM framework leverages learnable adaptation via a meta-controller to modulate the timestep dynamically, offering a flexible and continuously adaptive alternative that complements and extends existing acceleration methods.
 
 \section{Background}
 \label{sec:background}
@@ -85,7 +84,7 @@ In addition to timestep modulation, AEFTM incorporates a selective re-alignment 
 \State Initialize the sample with Gaussian noise.
 \For{each timestep until convergence}
   \State Compute noise estimates and conditional gradients.
-  \State Evaluate local error metrics using a compute\_error function.
+  \State Evaluate local error metrics using a compute_error function.
   \State Obtain \(dt\_adjustment\) from the meta-controller based on these metrics.
   \If{the error exceeds the threshold}
     \State Trigger re-alignment of the conditional guidance.
@@ -111,21 +110,21 @@ In Experiment 1, both the baseline and the AEFTM-enhanced models converged in 15
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\linewidth]{images/experiment1\_adaptive\_timesteps.pdf}
+  \includegraphics[width=0.7\linewidth]{images/experiment1_adaptive_timesteps.pdf}
   \caption{Adaptive Timestep Evolution}
   \label{fig:adaptive}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\linewidth]{images/experiment1\_baseline\_timesteps.pdf}
+  \includegraphics[width=0.7\linewidth]{images/experiment1_baseline_timesteps.pdf}
   \caption{Baseline Timestep Distribution}
   \label{fig:baseline}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\linewidth]{images/experiment1\_comparison.pdf}
+  \includegraphics[width=0.7\linewidth]{images/experiment1_comparison.pdf}
   \caption{Comparative Timestep Adjustments between Baseline and AEFTM}
   \label{fig:comparison}
 \end{figure}
@@ -134,7 +133,7 @@ Experiment 2 involved a component-wise ablation study comparing the baseline, AE
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\linewidth]{images/experiment2\_ablation\_study.pdf}
+  \includegraphics[width=0.7\linewidth]{images/experiment2_ablation_study.pdf}
   \caption{Component-wise Ablation Study}
   \label{fig:ablation}
 \end{figure}
@@ -143,14 +142,14 @@ In Experiment 3, detailed logs of internal dynamics revealed that error norms an
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\linewidth]{images/experiment3\_dynamic\_behavior.pdf}
+  \includegraphics[width=0.7\linewidth]{images/experiment3_dynamic_behavior.pdf}
   \caption{Dynamic Behavior Visualization of Error Metrics}
   \label{fig:dynamic}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.7\linewidth]{images/experiment3\_sensitivity\_analysis.pdf}
+  \includegraphics[width=0.7\linewidth]{images/experiment3_sensitivity_analysis.pdf}
   \caption{Sensitivity Analysis of Timestep Tuner Thresholds}
   \label{fig:sensitivity}
 \end{figure}
@@ -159,7 +158,7 @@ In Experiment 3, detailed logs of internal dynamics revealed that error norms an
 \label{sec:conclusion}
 We have presented the Adaptive Error Feedback with Timestep Modulation (AEFTM) framework, which significantly advances the efficiency of diffusion model sampling in the presence of dynamic conditional guidance. By integrating a lightweight meta-controller that continually monitors key error metrics and adapts the timestep accordingly, our method provides a more responsive and focused numerical integration process compared to conventional fixed-timestep approaches. Although the number of iterations required for convergence remained unchanged, the adaptive modulation led to higher perceptual quality, as demonstrated by improvements in both the Inception Score and FID.
 
-Ablation studies highlight the critical role of the selective re-alignment mechanism, which ensures that guidance remains accurate when error metrics exceed a predefined threshold. Building on established diffusion acceleration methods \cite{salimans\_2024-06-06T14:20:21Z\_multistep, wizadwongsa\_2023-01-27T06:48:29Z\_accelerating}, our approach offers a robust, plug-in solution suitable for resource-constrained environments and real-time applications. Future work will aim to extend this framework to multi-modal, video, and interactive generation tasks and to further refine the controller architecture to better handle complex conditional scenarios. Overall, AEFTM represents a significant step toward adaptive generative modeling and real-time diffusion applications.
+Ablation studies highlight the critical role of the selective re-alignment mechanism, which ensures that guidance remains accurate when error metrics exceed a predefined threshold. Building on established diffusion acceleration methods \cite{salimans2024multistep, wizadwongsa2023accelerating}, our approach offers a robust, plug-in solution suitable for resource-constrained environments and real-time applications. Future work will aim to extend this framework to multi-modal, video, and interactive generation tasks and to further refine the controller architecture to better handle complex conditional scenarios. Overall, AEFTM represents a significant step toward adaptive generative modeling and real-time diffusion applications.
 
 This work was generated by \textsc{AIRAS} \citep{airas2025}.
 
