@@ -292,52 +292,7 @@ line 68.
 Package natbib Warning: Citation `phung2022wavelet' on page 2 undefined on inpu
 t line 68.
 
-[2]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.87 ...luate local error metrics using a compute_
-                                                  error function.
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State
-              Obtain \(dt\_adjustment\) from the meta-controller based on th...
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State
-              Obtain \(dt\_adjustment\) from the meta-controller based on th...
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State
-              Obtain \(dt\_adjustment\) from the meta-controller based on th...
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State Obtain \(
-                       dt\_adjustment\) from the meta-controller based on th...
-
+[2] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd)
 
 LaTeX Warning: Reference `fig:adaptive' on page 3 undefined on input line 109.
 
@@ -399,9 +354,10 @@ Package rerunfilecheck Warning: File `paper.out' has changed.
 ist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (6 pages, 200979 bytes).
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
+r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on paper.pdf (6 pages, 206385 bytes).
 Transcript written on paper.log.
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 The top-level auxiliary file: paper.aux
@@ -707,53 +663,7 @@ line 68.
 Package natbib Warning: Citation `phung2022wavelet' on page 2 undefined on inpu
 t line 68.
 
-[2]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.87 ...luate local error metrics using a compute_
-                                                  error function.
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State
-              Obtain \(dt\_adjustment\) from the meta-controller based on th...
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State
-              Obtain \(dt\_adjustment\) from the meta-controller based on th...
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State
-              Obtain \(dt\_adjustment\) from the meta-controller based on th...
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State Obtain \(
-                       dt\_adjustment\) from the meta-controller based on th...
-
-
+[2] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd)
 Underfull \vbox (badness 10000) has occurred while \output is active [3]
 [4 <./images/experiment1_adaptive_timesteps.pdf> <./images/experiment1_baseline
 _timesteps.pdf> <./images/experiment1_comparison.pdf>]
@@ -772,7 +682,7 @@ ned on input line 161.
 Package natbib Warning: Citation `airas2025' on page 6 undefined on input line 
 163.
 
-(./paper.bbl (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd))
+(./paper.bbl)
 
 Package natbib Warning: There were undefined citations.
 
@@ -789,7 +699,7 @@ e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
 r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (6 pages, 212250 bytes).
+Output written on paper.pdf (6 pages, 209674 bytes).
 Transcript written on paper.log.
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex)
  restricted \write18 enabled.
@@ -1086,53 +996,7 @@ line 68.
 Package natbib Warning: Citation `phung2022wavelet' on page 2 undefined on inpu
 t line 68.
 
-[2]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.87 ...luate local error metrics using a compute_
-                                                  error function.
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State
-              Obtain \(dt\_adjustment\) from the meta-controller based on th...
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State
-              Obtain \(dt\_adjustment\) from the meta-controller based on th...
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State
-              Obtain \(dt\_adjustment\) from the meta-controller based on th...
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.88   \State Obtain \(
-                       dt\_adjustment\) from the meta-controller based on th...
-
-
+[2] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd)
 Underfull \vbox (badness 10000) has occurred while \output is active [3]
 [4 <./images/experiment1_adaptive_timesteps.pdf> <./images/experiment1_baseline
 _timesteps.pdf> <./images/experiment1_comparison.pdf>]
@@ -1147,7 +1011,7 @@ Package natbib Warning: Citation `salimans2024multistep' on page 6 undefined on
 Package natbib Warning: Citation `wizadwongsa2023accelerating' on page 6 undefi
 ned on input line 161.
 
-(./paper.bbl (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd))
+(./paper.bbl)
 
 Package natbib Warning: There were undefined citations.
 
@@ -1159,5 +1023,5 @@ e1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courie
 r/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on paper.pdf (6 pages, 212319 bytes).
+Output written on paper.pdf (6 pages, 209750 bytes).
 Transcript written on paper.log.
