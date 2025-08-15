@@ -75,38 +75,38 @@ Our approach revisits the diffusion process as the iterative integration of a st
 
 \section{Method}
 \label{sec:method}
-The proposed AEFTM framework augments standard diffusion sampling with an adaptive, error-aware meta-controller. At each denoising step, the diffusion model computes noise estimates and conditional gradients for the current sample. These intermediate outputs serve as inputs to a lightweight meta-controller, which is implemented as a series of fully connected layers with ReLU activations. The controller outputs a scalar value, \(dt\_adjustment\), which is then used to dynamically scale the base timestep according to the relation \(\Delta t = \Delta t_{base} \times dt\_adjustment\). Here, \(dt\_adjustment\) takes on values in the range (0, 1) so that the integration step can be finely tuned based on real-time error estimates.
+The proposed AEFTM framework augments standard diffusion sampling with an adaptive, error-aware meta-controller. At each denoising step, the diffusion model computes noise estimates and conditional gradients for the current sample. These intermediate outputs serve as inputs to a lightweight meta-controller, which is implemented as a series of fully connected layers with ReLU activations. The controller outputs a scalar value, $dt_\text{adjustment}$, which is then used to dynamically scale the base timestep according to the relation $\Delta t = \Delta t_{base} \times dt_\text{adjustment}$. Here, $dt_\text{adjustment}$ takes on values in the range (0, 1) so that the integration step can be finely tuned based on real-time error estimates.
 
 In addition to timestep modulation, AEFTM incorporates a selective re-alignment mechanism for conditional guidance. Specifically, when computed error metrics such as high gradient norms or uncertainty values exceed a pre-defined threshold, the system triggers a recalculation of the guidance signal rather than reusing cached features. This ensures that the conditional information remains accurate, preserving the quality of the generated image. The entire process is iterative: starting from an initial noisy sample, the model alternates between computing noise/gradient estimates, dynamically adjusting the timestep, optionally re-aligning the guidance, and updating the sample using a numerical integration scheme. The meta-controller is trained end-to-end with a differentiable surrogate loss function designed to minimize the cumulative integration error along the diffusion trajectory. This integration of classic operator splitting ideas with adaptive deep learning methods facilitates a diffusion process that is both computationally efficient and robust to varying conditional signals.
 
 \begin{algorithm}[H]
 \begin{algorithmic}
-\State Initialize the sample with Gaussian noise.
-\For{each timestep until convergence}
-  \State Compute noise estimates and conditional gradients.
-  \State Evaluate local error metrics using a compute_error function.
-  \State Obtain \(dt\_adjustment\) from the meta-controller based on these metrics.
-  \If{the error exceeds the threshold}
-    \State Trigger re-alignment of the conditional guidance.
-  \EndIf
-  \State Update the sample using the numerical integration step, with \(dt = \Delta t_{base} \times dt\_adjustment\).
-  \State Log the timestep, error metric, and \(dt\_adjustment\) value.
-\EndFor
-\State Compute quality metrics and generate visualization plots.
+  \State Initialize the sample with Gaussian noise.
+  \For{each timestep until convergence}
+    \State Compute noise estimates and conditional gradients.
+    \State Evaluate local error metrics using a \texttt{compute\_error} function.
+    \State Obtain $dt_\text{adjustment}$ from the meta-controller based on these metrics.
+    \If{the error exceeds the threshold}
+      \State Trigger re-alignment of the conditional guidance.
+    \EndIf
+    \State Update the sample using the numerical integration step, with $dt = \Delta t_{base} \times dt_\text{adjustment}$.
+    \State Log the timestep, error metric, and $dt_\text{adjustment}$ value.
+  \EndFor
+  \State Compute quality metrics and generate visualization plots.
 \end{algorithmic}
 \end{algorithm}
 
 \section{Experimental Setup}
 \label{sec:experimental}
-We conducted three sets of experiments to evaluate the performance of AEFTM. In Experiment 1, a baseline diffusion model with fixed timesteps (\(\Delta t = 0.1\)) is compared against an AEFTM-enhanced model on datasets such as CIFAR\_10 and CelebA using a common architecture such as DDPM. For both models, we log error metrics, iteration counts, computational times per sample, as well as quality measures including the Inception Score and FID.
+We conducted three sets of experiments to evaluate the performance of AEFTM. In Experiment 1, a baseline diffusion model with fixed timesteps ($\Delta t = 0.1$) is compared against an AEFTM-enhanced model on datasets such as CIFAR\_10 and CelebA using a common architecture such as DDPM. For both models, we log error metrics, iteration counts, computational times per sample, as well as quality measures including the Inception Score and FID.
 
 In Experiment 2, a component-wise ablation study is performed to compare three variants: the baseline fixed-timestep model, AEFTM-full (with both adaptive modulation and dynamic re-alignment of conditional guidance), and AEFTM-static (using only adaptive modulation without re-alignment). A flag within the AEFTM module is used to toggle the re-alignment feature, and comparisons are drawn based on convergence behavior and perceptual quality metrics.
 
-Experiment 3 focuses on dynamic behavior visualization and sensitivity analysis. Internal signals — including error estimates, gradient norms, and \(dt\_adjustment\) values — are logged at each timestep. Detailed plots are generated to visualize the evolution of these signals, and the re-alignment threshold is systematically varied to study its influence on both computational cost and output quality.
+Experiment 3 focuses on dynamic behavior visualization and sensitivity analysis. Internal signals — including error estimates, gradient norms, and $dt_\text{adjustment}$ values — are logged at each timestep. Detailed plots are generated to visualize the evolution of these signals, and the re-alignment threshold is systematically varied to study its influence on both computational cost and output quality.
 
 \section{Results}
 \label{sec:results}
-In Experiment 1, both the baseline and the AEFTM-enhanced models converged in 15 iterations per sample. However, while the baseline model maintained a constant timestep of \(\Delta t = 0.1\), AEFTM dynamically modulated the timestep to an average value of 0.0586. This adaptive modulation resulted in improved sample quality, with the AEFTM variant achieving an Inception Score of 6.10 compared to 5.37 for the baseline, and an FID of 33.99 versus 39.51. These findings are illustrated in Figures~\ref{fig:adaptive}, \ref{fig:baseline}, and \ref{fig:comparison}.
+In Experiment 1, both the baseline and the AEFTM-enhanced models converged in 15 iterations per sample. However, while the baseline model maintained a constant timestep of $\Delta t = 0.1$, AEFTM dynamically modulated the timestep to an average value of 0.0586. This adaptive modulation resulted in improved sample quality, with the AEFTM variant achieving an Inception Score of 6.10 compared to 5.37 for the baseline, and an FID of 33.99 versus 39.51. These findings are illustrated in Figures~\ref{fig:adaptive}, \ref{fig:baseline}, and \ref{fig:comparison}.
 
 \begin{figure}[H]
   \centering
